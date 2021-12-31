@@ -11,7 +11,8 @@ def configuration():
     root.geometry("700x700")
     
 def create_components():
-    txt_nom = tk.Entry(root, text="default value")
+    txt_nom = tk.Entry(root)
+    txt_nom.insert(0,"default value")
     txt_nom.place(x=250, y=200)
     btn = tk.Button(root, text="Ahmed")
     btn["command"] = lambda button=btn : commancez(button["text"])
