@@ -5,7 +5,6 @@ from tkinter import messagebox
 root = tk.Tk()
 lbl = tk.Label(root)
 
-
 def configuration():
     root.title("une fentre de teste")
     root.geometry("700x700")
@@ -22,10 +21,7 @@ def commancez(nom=None):
     messagebox.showinfo("titre", nom)
     lbl["text"] = nom
     lbl.place(x=250,y=250)
-    # root.withdraw()
-    # tk.Toplevel(root)
     
-
 def setup_window():
     configuration()
     create_components()
